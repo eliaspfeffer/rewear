@@ -1,0 +1,16 @@
+.DS_Store
+.openai/local/
+.openai/*.tar.gz
+*.log
+design-brief.txt
+
+node_modules/
+
+dist/
+public/vendor/vision/wasm/*.wasm
+public/vendor/vision/*.task
+
+.env
+.env.*
+!.env.example
+*.download

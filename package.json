@@ -1,0 +1,21 @@
+{
+  "name": "rewear",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "local": "node scripts/local.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check public/app.js && node --check public/style-engine.js && node --check public/color-analysis.js && node --check public/portrait-camera.js && node --check public/experience.js && node --check worker/catalog.js && node --check public/local-wardrobe.js && node --check local/library.mjs && node --check scripts/local.mjs && node --check scripts/setup-vision.mjs",
+    "build": "node scripts/build.mjs",
+    "setup:vision": "node scripts/setup-vision.mjs"
+  },
+  "devDependencies": {
+    "@mediapipe/tasks-vision": "^1.1.1",
+    "esbuild": "^0.28.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
